@@ -1,0 +1,263 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+#main{
+    height: 100vh;
+    background-color: gray;
+}
+
+.container{
+    border-radius: 20px;
+    width: 70%;
+    height: 70%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+    background-size: cover;
+    background-image: url(image/space.jpg);
+    object-fit: cover;
+    background-position: center;
+}
+.container-main{
+    /* box-shadow: 10ppx 10px 10px black; */
+    height: 100%;
+    position: relative;
+    
+    
+}
+.layer{
+    height: 100%;
+    background-color: #11111191;
+    display: flex;
+    backdrop-filter: blur(5px);
+}
+.header{
+    backdrop-filter: blur(5px);    
+    background-color: #11111191;
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 20px;
+    color: white;
+    
+}
+.logo{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+.logo i{
+    font-size: 20px;
+}
+
+.fa-bars{
+    margin-top: 5px;
+    font-size: 20px;
+    cursor: pointer;
+    position: relative;
+
+}
+.fa-x{
+    cursor: pointer;
+    display:none;
+    font-weight:bolder;
+}
+.musicList{
+    color: white;
+    text-align: right;
+    height: 100%;
+    width: 50%;
+    /* background-color: red; */
+    position: absolute;
+    z-index : 5;
+    right: -100%;
+    padding: 20px;
+    /* transition: 1s  linear; */
+}
+.musicList h1{
+    text-align-last:center;
+}
+.list{
+    margin-top: 10px;
+    text-align: left;
+    border-top: 2px solid white;
+}
+.listItem{
+    border-bottom: 2px solid white;
+    cursor: pointer;
+    
+}
+.listItem h2{
+    
+    padding: 10px 0;
+
+}
+.left{
+    /* background-color: blue; */
+    width: 50%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    /* justify-content: center; */
+}
+.right{
+    width: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.left-main{
+    /* background-color: #fff; */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.left-main .image{
+    width: 70%;
+    object-fit: cover;
+    border: none;
+}
+.image img{
+    width: 100%;
+    border-radius: 10px;
+    
+}
+#music{
+    display: none;
+}
+.volume{
+    margin-top: 20px;
+    display: flex;
+    gap: 5px;
+    /* background-color: red; */
+    align-items: center;
+
+}
+
+
+.range-feild{
+
+    -webkit-appearance: none;
+    width: 150px;
+    outline: none;
+    border-radius: 50px;
+    height: 10px;
+    overflow: hidden;
+    background-color:#393B3B;
+    
+}
+
+.song-name{
+    color: white;
+}
+.artist-name{
+    color: white;
+}
+.range-feild::-webkit-slider-thumb{
+    -webkit-appearance: none;
+    width: 10px ;
+    height: 10px;
+    border-radius: 50%;
+    cursor: pointer;
+    background-color: white;
+    box-shadow: -155px 0 0 150px #4A9FE9;
+}
+.volume-box{
+    color: white;
+    border: 1px solid black;
+    padding: 0.5px 5px;
+    font-weight: 900;
+    /* margin-left: 10px; */
+    background-color: rgb(67, 66, 66);
+    font-size: 18px;
+}
+.volume i{
+    padding: 2px 6px;
+    /* background-color: green; */
+    background-color: #4a9fe9;
+}
+.vol{
+    cursor: pointer;
+}
+.volume-bar{
+    display: flex;
+
+}
+
+.right-main{
+    height: 40vh;
+    width: 80%;
+    /* background-color: red; */
+    padding: 20px;
+
+}
+.song-details{
+    text-align: center;
+}
+
+
+.buttons{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+    margin: 50px 0;
+}
+button{
+    /* padding: 10px ; */
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    font-size: 20px;
+    cursor: pointer;
+    border: none;
+
+}
+button:hover{
+    background-color: #4A9FE9;
+
+}
+.play{
+    background-color: #4A9FE9;
+}
+.progress-bar{
+    margin-top: 5px;
+    width: 80%;
+    height: 10px;
+    background-color: #393b3b;
+    margin-left: 10%;
+    border-radius: 50px;
+    cursor: pointer;
+}
+.progress{
+    width: 0;
+    border-radius: 50px;
+    height: 10px;
+    background-color: #4A9FE9;
+    position: relative;
+    transition: all 0.5s;
+}
+.progress::after{
+    content: "";
+    position: absolute;
+    width: 5px;
+    height: 5px;
+    background-color: #4A9FE9;
+    border-radius: 50%;
+    border: 10px solid #4A9FE9;
+    
+    top: -7px;
+    right: -12px;
+}
+audio{
+    margin-top: 50px;
+}
+
+
+

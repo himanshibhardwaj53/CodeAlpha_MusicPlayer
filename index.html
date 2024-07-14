@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Music player</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/b563d8f293.js" crossorigin="anonymous"></script>
+
+</head>
+<body>
+    <div id="main">
+        <div class="container">
+            <div class="header">
+                <div class="logo">
+                    <i class="fa-solid fa-music"></i>
+                    <h1>Sangeet</h1>
+                </div>
+                    <div class="bar">
+                        <i class="fa-solid fa-bars"></i>
+                    </div>
+            
+               
+
+            </div>
+            <div class="musicList">
+                 <i class="fa-solid fa-x"></i>
+                 <h1>Music List</h1>
+                 <div class="list">
+                 </div>
+            </div>
+           <div class="container-main">
+            <div class="layer">
+                <div class="left">
+                    <div class="left-main">
+                        <div class="image">
+                            <img src="image/0.webp" alt="">
+                        </div>
+                        <div class="volume">
+                            <div class="volume-box">100</div>
+                            <i class="fa-solid fa-volume-high vol"></i>
+                            <div class="volume-bar">
+                                <input type="range" min="0" max="100"  value="100" class="range-feild" >
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="right">
+                    <div class="right-main">
+                        <div class="song-details">
+                            <div class="song-name"><h1>Title</h1></div>
+                        <div class="artist-name"><h3>Artist</h3></div>
+                        </div>
+                        <div class="buttons">
+                            <button class="previous">
+                                <i class="fa-solid fa-backward"></i>
+                            </button>
+                            <button class="play">
+                                <i class="fa-solid fa-play"></i>
+                            </button>
+                            <button class="next"><i class="fa-solid fa-forward"></i></button>
+                        </div>
+                        <div class="music-progress">
+                            <div class="progress-bar">
+                                <div class="progress">
+                                </div>
+                            </div>
+                            <audio id="music" src="music/Ghumshudaa.mp3" controls></audio>
+                        </div>
+    
+    
+                    </div>
+    
+                </div>
+            </div>
+           </div>
+        </div>
+    </div>
+
+
+    <script src="app.js"></script>
+</body>
+</html>
